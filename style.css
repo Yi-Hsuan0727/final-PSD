@@ -169,7 +169,6 @@ body a{
 }
 .infor{
 	background-image: url(images/bg.png) ;
-	background-repeat: repeat-x;
 	padding: 20px;
 	color: #fff;
 }
@@ -192,20 +191,23 @@ body a{
 	width: 460px;
 }
 .form input{
-	margin-bottom: 20px;
 	font-size: 14px;
 	padding: 5px;
 }
 .form input:focus, .form textarea:focus{
 	outline: 2px solid #00cc99;
 }
+#content{
+	height: 250px;
+}
 #submit{
+	text-align: center;
 	background: #00cc99;
 	color: #ffffff;
-	position: absolute;
-	right:0;
-	bottom: 0;
 	width: 70px;
+	position: absolute;
+	bottom:0;
+	right:0;
 }
 #submit:hover{
 	color: #02a77d;
