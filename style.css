@@ -206,6 +206,10 @@ body a{
 	bottom: 0;
 	width: 70px;
 }
+#submit:hover{
+	color: #02a77d;
+	background: #fff;
+}
 .footer{
 	display: flex;
 	justify-content: space-between;
