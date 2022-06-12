@@ -116,7 +116,7 @@ body a{
 	border-bottom:4px solid #00cd99;
 }
 .banner{
-	background-image: url(../images/banner_09.png);
+	background-image: url(images/banner_09.png);
 	padding: 130px 0 90px 0;
 	margin-bottom: 64px;
 }
@@ -168,7 +168,7 @@ body a{
 	color: #02a77d;
 }
 .infor{
-	background-image: url(../images/bg.png);
+	background-image: url(images/bg.png);
 	padding: 20px;
 	color: #fff;
 }
