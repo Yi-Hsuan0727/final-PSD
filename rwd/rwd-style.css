@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*css reset end*/
 body{
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -53,15 +54,12 @@ body a{
 	text-decoration: none;
 	display: block;
 }
-img{
-	max-width: 100%;
-	height: auto;
-}
 .wrap{
 	margin: 0 auto;
 	max-width: 1003px;
 	margin-top: 30px;
 }
+/*top*/
 .top{
 	width: 1003px;
 	position: fixed;
@@ -93,6 +91,7 @@ img{
 .twitter{
 	color: #00acee;
 }
+/*header*/
 .header{
 	display: flex;
 	justify-content: space-between;
@@ -100,7 +99,7 @@ img{
 	background: #fff;
 }
 .header h1 a{
-	background-image: url(images/logo.png);
+	background-image: url(../images/logo.png);
 	width: 173px;
 	height: 51px;
 	text-indent: 101%;
@@ -119,8 +118,9 @@ img{
 .header li a:hover{
 	border-bottom:4px solid #00cd99;
 }
+/*banner*/
 .banner{
-	background-image: url(images/banner_09.png);
+	background-image: url(../images/banner_09.png);
 	padding: 130px 0 90px 0;
 	margin-bottom: 64px;
 }
@@ -131,6 +131,7 @@ img{
 	padding: 37px 0 37px 23px;
 	line-height: 1.5;
 }
+/*course*/
 .course{
 	display: flex;
 	justify-content: space-around;
@@ -151,6 +152,7 @@ img{
 .course li p{
 	text-align: left;
 }
+/*table*/
 .table{
 	margin: 0 66px 60px 66px;
 }
@@ -171,8 +173,9 @@ img{
 .green{
 	color: #02a77d;
 }
+/*form*/
 .infor{
-	background-image: url(images/bg.png) ;
+    background: linear-gradient(#00664D, #009671);
 	padding: 20px;
 	color: #fff;
 }
@@ -217,6 +220,7 @@ img{
 	color: #02a77d;
 	background: #fff;
 }
+/*footer*/
 .footer{
 	display: flex;
 	justify-content: space-between;
@@ -233,19 +237,45 @@ img{
 @media(max-width:767px){
 	.wrap{
 		width: 100%;
-		margin: 30px 30px 0 30px;
+        margin: 0 15px;
 	}
 	.top{
-		width: 100%;
-	}
+        width: 100%;
+        position: static;
+    }
+    .table{
+        margin: 0 40px 40px 40px;
+    }
 	.table th,.table td{
 		padding: 14px 40px 14px 14px;
-		font-size: 90%;
-	}
+    }
 	.course, .form{
-		flex-direction: column;
-	}
+        flex-direction: column;
+    }
+    .course li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .course li img{
+        width: 50%;
+    }
+    .form{
+        align-items: center;
+    }
+    #submit{
+        position: static;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
 }
 @media(max-width:480px){
-	
+    .table th,.table td{
+		padding: 5px;
+		font-size: 60%;
+	}
+    img{
+        width: 30%;
+    }
 }
